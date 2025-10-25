@@ -4,7 +4,7 @@ import { useAuth } from '../context/AuthContext';
 import { useCart } from '../context/CartContext';
 
 const Header = () => {
-  const { user, logout, isAuthenticated, isAdmin } = useAuth();
+  const { logout, isAuthenticated, isAdmin } = useAuth();
   const { getTotalItems } = useCart();
 
   return (
